@@ -17,7 +17,7 @@ public class Main {
         person.setName("Sasha");
         personService.updatePerson(person);
         //System.out.println(personService.findAllPersons());
-        System.out.println(personService.findAllPersons());
+        //System.out.println(personService.findAllPersons());
     }
 }
 

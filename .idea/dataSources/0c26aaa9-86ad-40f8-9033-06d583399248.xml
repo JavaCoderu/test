@@ -9,11 +9,11 @@
       <Comment>TestHiber</Comment>
       <StateNumber>570</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>795</IntrospectionStateNumber>
+      <IntrospectionStateNumber>861</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|16645|16647|1
-sequence|table|16656|16658|1
+      <Relations>sequence|table|16680|16682|1
+sequence|table|16710|16712|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -105,7 +105,7 @@ sequence|table|16656|16658|1
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>796</IntrospectionStateNumber>
+      <IntrospectionStateNumber>862</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -166,75 +166,75 @@ sequence|table|16656|16658|1
       <SchemaId>11</SchemaId>
     </extension>
     <sequence id="26" parent="18" name="cars_id_seq">
-      <ObjectId>16645</ObjectId>
+      <ObjectId>16710</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>788</StateNumber>
+      <StateNumber>855</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <sequence id="27" parent="18" name="persons_id_seq">
-      <ObjectId>16656</ObjectId>
+      <ObjectId>16680</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>789</StateNumber>
+      <StateNumber>829</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <table id="28" parent="18" name="cars">
-      <ObjectId>16647</ObjectId>
+      <ObjectId>16712</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>790</StateNumber>
+      <StateNumber>856</StateNumber>
     </table>
     <table id="29" parent="18" name="persons">
-      <ObjectId>16658</ObjectId>
+      <ObjectId>16682</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>790</StateNumber>
+      <StateNumber>830</StateNumber>
     </table>
     <column id="30" parent="28" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>788</StateNumber>
+      <StateNumber>855</StateNumber>
       <DefaultExpression>nextval(&apos;cars_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
     <column id="31" parent="28" name="color">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>788</StateNumber>
+      <StateNumber>855</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="32" parent="28" name="model">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>788</StateNumber>
+      <StateNumber>855</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="33" parent="28" name="person_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>788</StateNumber>
+      <StateNumber>855</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="34" parent="28" name="cars_pkey">
-      <ObjectId>16654</ObjectId>
-      <StateNumber>788</StateNumber>
+      <ObjectId>16719</ObjectId>
+      <StateNumber>855</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="35" parent="28" name="cars_pkey">
-      <ObjectId>16655</ObjectId>
-      <StateNumber>788</StateNumber>
+      <ObjectId>16720</ObjectId>
+      <StateNumber>855</StateNumber>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>cars_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="36" parent="28" name="fk5nj4b2h64ro7uslx3p7mimuut">
-      <ObjectId>16664</ObjectId>
-      <StateNumber>790</StateNumber>
+      <ObjectId>16721</ObjectId>
+      <StateNumber>856</StateNumber>
       <ColNames>person_id</ColNames>
-      <RefTableId>16658</RefTableId>
+      <RefTableId>16682</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>persons</RefTableName>
       <RefKeyName>persons_pkey</RefKeyName>
@@ -244,7 +244,7 @@ sequence|table|16656|16658|1
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>789</StateNumber>
+      <StateNumber>829</StateNumber>
       <DefaultExpression>nextval(&apos;persons_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
@@ -252,24 +252,24 @@ sequence|table|16656|16658|1
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>789</StateNumber>
+      <StateNumber>829</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="39" parent="29" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>789</StateNumber>
+      <StateNumber>829</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="40" parent="29" name="persons_pkey">
-      <ObjectId>16662</ObjectId>
-      <StateNumber>789</StateNumber>
+      <ObjectId>16686</ObjectId>
+      <StateNumber>829</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="41" parent="29" name="persons_pkey">
-      <ObjectId>16663</ObjectId>
-      <StateNumber>789</StateNumber>
+      <ObjectId>16687</ObjectId>
+      <StateNumber>829</StateNumber>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>persons_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
